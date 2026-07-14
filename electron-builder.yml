@@ -25,7 +25,7 @@ mac:
 win:
   icon: assets/generated/icons/win/icon.ico
   target:
-    - target: nsis-web
+    - target: nsis
       arch:
         - x64
         - ia32
@@ -36,8 +36,10 @@ win:
         - ia32
         - arm64
   compression: maximum
-nsisWeb:
+nsis:
   runAfterFinish: false
+  oneClick: false
+  allowToChangeInstallationDirectory: true
 linux:
   icon: assets/generated/icons/png
   category: AudioVideo
